@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Dark limnology theme: deep navy-violet surfaces, violet and teal accents. Overriding the Tailwind palette keeps the older pages in the same theme. */
+@theme {
+  --color-navy-950: #070913;
+  --color-navy-900: #0b0e1c;
+  --color-navy-800: #151a30;
+  --color-navy-700: #232a4a;
+  --color-ink: #eef0fb;
+  --color-teal-brand: #35d0c4;
+  --color-violet-brand: #a98bff;
+  --color-water: #5aa9e6;
+  --color-risk-low: #3ecf8e;
+  --color-risk-moderate: #f2c14e;
+  --color-risk-high: #ff9f4a;
+  --color-risk-critical: #ff5c6c;
+  --color-slate-50: rgba(255,255,255,0.04);
+  --color-slate-100: rgba(255,255,255,0.07);
+  --color-slate-200: rgba(255,255,255,0.10);
+  --color-slate-300: rgba(255,255,255,0.18);
+  --color-slate-400: #8c95b3;
+  --color-slate-500: #9aa4c4;
+  --color-slate-600: #b3bcd8;
+  --color-slate-700: #cdd4ea;
+  --color-slate-800: #e3e7f6;
+  --color-slate-900: #eef0fb;
+  --color-teal-50: rgba(53,208,196,0.10);
+  --color-teal-300: #5eead4;
+  --color-teal-600: #14b8a6;
+  --color-amber-50: rgba(242,193,78,0.10);
+  --color-amber-300: rgba(242,193,78,0.45);
+  --color-amber-700: #f2c14e;
+  --color-amber-800: #f5cd6b;
+  --color-amber-900: #f8d98a;
+  --color-sky-50: rgba(90,169,230,0.10);
+  --color-sky-200: rgba(90,169,230,0.35);
+  --color-sky-300: rgba(90,169,230,0.5);
+  --color-sky-800: #8fc8f5;
+  --color-sky-900: #a9d6f8;
+  --color-red-50: rgba(255,92,108,0.10);
+  --color-red-200: rgba(255,92,108,0.4);
+  --color-red-700: #ff8a96;
+  --color-red-900: #ffa7b0;
+  --color-emerald-50: rgba(62,207,142,0.10);
+  --color-emerald-300: rgba(62,207,142,0.45);
+  --color-emerald-700: #4fe0a0;
+  --color-emerald-800: #6fe8b4;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+}
+
+:root { color-scheme: dark; }
+body {
+  background: radial-gradient(1200px 600px at 85% -10%, rgba(169,139,255,0.10), transparent 60%), radial-gradient(900px 500px at -5% 20%, rgba(53,208,196,0.07), transparent 60%), #0a0d1a;
+  background-attachment: fixed;
+  color: #e3e7f6;
+  font-family: var(--font-sans);
+}
+.leaflet-container { background: #0d1124; font-family: var(--font-sans); }
+.leaflet-container.no-tiles { background: #0d1124; }
+.leaflet-tooltip { background: #151a30; color: #e3e7f6; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 4px 16px rgba(0,0,0,0.5); }
+.leaflet-tooltip-top:before { border-top-color: #151a30; }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.09); border-radius: 18px; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+.card-title { font-size: 0.85rem; font-weight: 650; letter-spacing: 0.01em; color: #eef0fb; }
+.th { text-align: left; font-size: 0.7rem; letter-spacing: 0.02em; color: #9aa4c4; font-weight: 600; padding: 0.5rem 0.6rem; background: #131830; position: sticky; top: 0; }
+.td { padding: 0.45rem 0.6rem; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.06); }
+.btn { background: linear-gradient(135deg, #a98bff, #7c5cf0); color: #120d2b; border-radius: 999px; padding: 0.55rem 1.1rem; font-weight: 650; font-size: 0.85rem; }
+.btn:hover { filter: brightness(1.1); }
+.btn-teal { background: linear-gradient(135deg, #5eead4, #2bb8aa); color: #04201d; }
+.btn-teal:hover { filter: brightness(1.1); }
+.btn-ghost { border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.04); color: #dfe4f7; border-radius: 999px; padding: 0.35rem 0.8rem; font-size: 0.78rem; font-weight: 500; }
+.btn-ghost:hover { background: rgba(255,255,255,0.10); }
+.btn-active { background: #f4f2ff; color: #1a1340; border-color: transparent; font-weight: 650; }
+.select, .input { border: 1px solid rgba(255,255,255,0.14); border-radius: 10px; padding: 0.35rem 0.55rem; font-size: 0.8rem; background: #131830; color: #e3e7f6; }
+.select option { background: #131830; color: #e3e7f6; }
+.label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.01em; color: #9aa4c4; }
+.mono { font-family: var(--font-mono); }
+.estimated { background-image: repeating-linear-gradient(135deg, rgba(90,169,230,0.14) 0 6px, transparent 6px 12px); border: 1px dashed #5aa9e6; }
+input[type="range"] { accent-color: #a98bff; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.16); border-radius: 8px; }
+.recharts-default-tooltip { background: #151a30 !important; border: 1px solid rgba(255,255,255,0.15) !important; border-radius: 10px; }
+.recharts-tooltip-label, .recharts-tooltip-item { color: #e3e7f6 !important; }
+.recharts-legend-item-text { color: #b3bcd8 !important; }
+.recharts-cartesian-axis-line, .recharts-cartesian-axis-tick-line { stroke: rgba(255,255,255,0.2); }
+
+/* Small screens: grid children may shrink below their content, and wide tables scroll inside their card instead of widening the page */
+.grid > * { min-width: 0; }
+@media (max-width: 1023px) {
+  .card table { display: block; max-width: 100%; overflow-x: auto; }
+}
+main { overflow-x: clip; }

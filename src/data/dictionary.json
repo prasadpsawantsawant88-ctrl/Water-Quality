@@ -1,0 +1,175 @@
+[
+ {
+  "field": "Observation_ID",
+  "description": "Unique observation identifier",
+  "unit": "-",
+  "type": "text",
+  "role": "key",
+  "valid_range": null
+ },
+ {
+  "field": "Station_ID",
+  "description": "Monitoring station identifier (lake prefix + number)",
+  "unit": "-",
+  "type": "text",
+  "role": "key",
+  "valid_range": null
+ },
+ {
+  "field": "Lake_Name",
+  "description": "Great Lake the station is on",
+  "unit": "-",
+  "type": "category",
+  "role": "grouping; interpolation never crosses lakes",
+  "valid_range": null
+ },
+ {
+  "field": "Latitude",
+  "description": "Station latitude (WGS84, schematic)",
+  "unit": "degrees",
+  "type": "float",
+  "role": "coordinates",
+  "valid_range": null
+ },
+ {
+  "field": "Longitude",
+  "description": "Station longitude (WGS84, schematic)",
+  "unit": "degrees",
+  "type": "float",
+  "role": "coordinates",
+  "valid_range": null
+ },
+ {
+  "field": "Observation_Date",
+  "description": "Sampling date (ISO 8601), every 14 days",
+  "unit": "date",
+  "type": "date",
+  "role": "time index",
+  "valid_range": null
+ },
+ {
+  "field": "Total_Phosphorus",
+  "description": "Total phosphorus concentration",
+  "unit": "ug/L",
+  "type": "float",
+  "role": "Kriging, Moran, AHP, bloom model",
+  "valid_range": [
+   0.0,
+   500.0
+  ]
+ },
+ {
+  "field": "Chlorophyll_a",
+  "description": "Chlorophyll-a concentration",
+  "unit": "ug/L",
+  "type": "float",
+  "role": "Kriging, Moran, AHP, bloom model",
+  "valid_range": [
+   0.0,
+   500.0
+  ]
+ },
+ {
+  "field": "Water_Temperature",
+  "description": "Water temperature",
+  "unit": "degC",
+  "type": "float",
+  "role": "Kriging, Moran, AHP, bloom model",
+  "valid_range": [
+   -1.0,
+   35.0
+  ]
+ },
+ {
+  "field": "Turbidity",
+  "description": "Water clarity indicator (higher = less clear)",
+  "unit": "NTU",
+  "type": "float",
+  "role": "Kriging, Moran, AHP",
+  "valid_range": [
+   0.0,
+   1000.0
+  ]
+ },
+ {
+  "field": "Dissolved_Oxygen",
+  "description": "Dissolved oxygen concentration",
+  "unit": "mg/L",
+  "type": "float",
+  "role": "Kriging, Moran, AHP, bloom model",
+  "valid_range": [
+   0.0,
+   20.0
+  ]
+ },
+ {
+  "field": "Nitrate",
+  "description": "Nitrate + nitrite as nitrogen",
+  "unit": "mg/L",
+  "type": "float",
+  "role": "Kriging, Moran, AHP (not in bloom model)",
+  "valid_range": [
+   0.0,
+   20.0
+  ]
+ },
+ {
+  "field": "Rainfall",
+  "description": "Recent rainfall indicator",
+  "unit": "mm",
+  "type": "float",
+  "role": "Kriged as auxiliary input to the bloom model",
+  "valid_range": [
+   0.0,
+   500.0
+  ]
+ },
+ {
+  "field": "Season",
+  "description": "Meteorological season of the date",
+  "unit": "-",
+  "type": "category",
+  "role": "bloom model",
+  "valid_range": null
+ },
+ {
+  "field": "Bloom_Observed",
+  "description": "Whether a bloom was observed at the sample (1/0)",
+  "unit": "binary",
+  "type": "int",
+  "role": "bloom model target",
+  "valid_range": null
+ },
+ {
+  "field": "Monitoring_Status",
+  "description": "Monitored (has observations) or Unmonitored (prediction location)",
+  "unit": "-",
+  "type": "category",
+  "role": "filter",
+  "valid_range": null
+ },
+ {
+  "field": "Data_Source",
+  "description": "Always SIMULATED in this prototype",
+  "unit": "-",
+  "type": "category",
+  "role": "provenance",
+  "valid_range": null
+ },
+ {
+  "field": "Data_Status",
+  "description": "SIMULATED_OBSERVED (a simulated station measurement), MISSING (planned sample absent), ESTIMATED_KRIGING (value inferred by Kriging, never mixed into observed data)",
+  "unit": "-",
+  "type": "category",
+  "role": "provenance",
+  "valid_range": null
+ },
+ {
+  "field": "Quality_Flag",
+  "description": "OK, or VALUE_BLANKED when an impossible value was removed during cleaning",
+  "unit": "-",
+  "type": "category",
+  "role": "quality",
+  "valid_range": null
+ }
+]

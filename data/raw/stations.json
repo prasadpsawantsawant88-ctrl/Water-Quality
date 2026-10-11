@@ -1,0 +1,432 @@
+[
+ {
+  "id": "SUP-01",
+  "lake": "Superior",
+  "name": "Western Arm (Duluth offshore)",
+  "lat": 46.9,
+  "lon": -90.6,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "SUP-02",
+  "lake": "Superior",
+  "name": "Apostle Islands offshore",
+  "lat": 47.4,
+  "lon": -89.3,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "SUP-03",
+  "lake": "Superior",
+  "name": "North Shore offshore",
+  "lat": 48.3,
+  "lon": -88.0,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "SUP-04",
+  "lake": "Superior",
+  "name": "Central Basin",
+  "lat": 47.3,
+  "lon": -87.0,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "SUP-05",
+  "lake": "Superior",
+  "name": "Eastern Basin",
+  "lat": 47.5,
+  "lon": -85.8,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "SUP-06",
+  "lake": "Superior",
+  "name": "Whitefish approach",
+  "lat": 46.95,
+  "lon": -86.0,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "MIC-01",
+  "lake": "Michigan",
+  "name": "Southern Basin (Gary offshore)",
+  "lat": 42.0,
+  "lon": -87.2,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "MIC-02",
+  "lake": "Michigan",
+  "name": "Milwaukee offshore",
+  "lat": 42.9,
+  "lon": -87.2,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "MIC-03",
+  "lake": "Michigan",
+  "name": "Central west basin",
+  "lat": 43.8,
+  "lon": -87.0,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "MIC-04",
+  "lake": "Michigan",
+  "name": "Door Peninsula offshore",
+  "lat": 44.7,
+  "lon": -86.9,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "MIC-05",
+  "lake": "Michigan",
+  "name": "Northern Basin",
+  "lat": 45.4,
+  "lon": -85.9,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "MIC-06",
+  "lake": "Michigan",
+  "name": "Muskegon offshore",
+  "lat": 43.4,
+  "lon": -86.7,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "HUR-01",
+  "lake": "Huron",
+  "name": "Northern main basin",
+  "lat": 45.6,
+  "lon": -82.5,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "HUR-02",
+  "lake": "Huron",
+  "name": "Central main basin",
+  "lat": 44.8,
+  "lon": -82.5,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "HUR-03",
+  "lake": "Huron",
+  "name": "Southern main basin",
+  "lat": 43.9,
+  "lon": -82.4,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "HUR-04",
+  "lake": "Huron",
+  "name": "Saginaw Bay",
+  "lat": 43.75,
+  "lon": -83.5,
+  "zone": "Bay",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "HUR-05",
+  "lake": "Huron",
+  "name": "Georgian Bay",
+  "lat": 45.6,
+  "lon": -81.1,
+  "zone": "Bay",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "HUR-06",
+  "lake": "Huron",
+  "name": "North Channel",
+  "lat": 46.0,
+  "lon": -82.0,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ERI-01",
+  "lake": "Erie",
+  "name": "Western Basin (Maumee Bay)",
+  "lat": 41.8,
+  "lon": -83.0,
+  "zone": "Bay",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ERI-02",
+  "lake": "Erie",
+  "name": "Western Basin (Pelee Passage)",
+  "lat": 41.85,
+  "lon": -82.5,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ERI-03",
+  "lake": "Erie",
+  "name": "Central Basin west (Sandusky)",
+  "lat": 41.9,
+  "lon": -81.7,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ERI-04",
+  "lake": "Erie",
+  "name": "Central Basin (Cleveland offshore)",
+  "lat": 42.2,
+  "lon": -81.0,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ERI-05",
+  "lake": "Erie",
+  "name": "Central Basin east",
+  "lat": 42.4,
+  "lon": -80.0,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ERI-06",
+  "lake": "Erie",
+  "name": "Eastern Basin",
+  "lat": 42.6,
+  "lon": -79.6,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ERI-07",
+  "lake": "Erie",
+  "name": "Central Basin north (Canadian waters)",
+  "lat": 42.4,
+  "lon": -81.8,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ONT-01",
+  "lake": "Ontario",
+  "name": "Hamilton Harbour approach",
+  "lat": 43.45,
+  "lon": -79.3,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ONT-02",
+  "lake": "Ontario",
+  "name": "Western basin",
+  "lat": 43.6,
+  "lon": -78.4,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ONT-03",
+  "lake": "Ontario",
+  "name": "Central basin (Rochester)",
+  "lat": 43.7,
+  "lon": -77.4,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ONT-04",
+  "lake": "Ontario",
+  "name": "Eastern basin",
+  "lat": 43.9,
+  "lon": -76.6,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ONT-05",
+  "lake": "Ontario",
+  "name": "South shore (Sodus)",
+  "lat": 43.55,
+  "lon": -77.9,
+  "zone": "Nearshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "ONT-06",
+  "lake": "Ontario",
+  "name": "North shore central",
+  "lat": 43.95,
+  "lon": -77.2,
+  "zone": "Offshore",
+  "monitored": true,
+  "status": "Monitored"
+ },
+ {
+  "id": "SUP-U1",
+  "lake": "Superior",
+  "name": "Western Arm south shore",
+  "lat": 46.95,
+  "lon": -91.5,
+  "zone": "Nearshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "SUP-U2",
+  "lake": "Superior",
+  "name": "North central basin",
+  "lat": 48.1,
+  "lon": -87.0,
+  "zone": "Offshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "MIC-U1",
+  "lake": "Michigan",
+  "name": "Northern deep basin",
+  "lat": 45.6,
+  "lon": -86.2,
+  "zone": "Offshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "MIC-U2",
+  "lake": "Michigan",
+  "name": "Southeast nearshore",
+  "lat": 42.5,
+  "lon": -86.6,
+  "zone": "Nearshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "HUR-U1",
+  "lake": "Huron",
+  "name": "Central Huron east",
+  "lat": 44.4,
+  "lon": -82.0,
+  "zone": "Offshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "HUR-U2",
+  "lake": "Huron",
+  "name": "Georgian Bay approach",
+  "lat": 45.2,
+  "lon": -81.8,
+  "zone": "Offshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "HUR-U3",
+  "lake": "Huron",
+  "name": "Outer Saginaw Bay",
+  "lat": 44.0,
+  "lon": -83.2,
+  "zone": "Bay",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "ERI-U1",
+  "lake": "Erie",
+  "name": "Western Basin south shore",
+  "lat": 41.65,
+  "lon": -82.4,
+  "zone": "Bay",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "ERI-U2",
+  "lake": "Erie",
+  "name": "Central Basin mid-lake",
+  "lat": 42.15,
+  "lon": -80.5,
+  "zone": "Offshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "ERI-U3",
+  "lake": "Erie",
+  "name": "Sandusky Bay mouth",
+  "lat": 41.75,
+  "lon": -82.0,
+  "zone": "Bay",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "ONT-U1",
+  "lake": "Ontario",
+  "name": "Eastern basin central",
+  "lat": 43.8,
+  "lon": -77.0,
+  "zone": "Offshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ },
+ {
+  "id": "ONT-U2",
+  "lake": "Ontario",
+  "name": "Niagara bar region",
+  "lat": 43.55,
+  "lon": -78.9,
+  "zone": "Nearshore",
+  "monitored": false,
+  "status": "Unmonitored"
+ }
+]

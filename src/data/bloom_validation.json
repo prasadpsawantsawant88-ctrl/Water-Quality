@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "simulated": true,
+  "holdout": [
+   "2024-01-01",
+   "2025-12-31"
+  ],
+  "n": 1543,
+  "bloom_rate": 0.118600129617628,
+  "validation": "temporal holdout (train 2018-2023, test 2024-2025) plus station-aware GroupKFold on the training period; features come only from the previous sample"
+ },
+ "models": {
+  "lr": {
+   "auc": 0.9162206685953069,
+   "brier": 0.06306340668178873,
+   "brier_skill_vs_base_rate": 0.3967195084581726,
+   "log_loss": 0.21522562432981554,
+   "calibration_intercept": -0.07498390923469965,
+   "calibration_slope": 1.1345463796020763,
+   "ece": 0.02767057679844459
+  },
+  "rf": {
+   "auc": 0.909797894567663,
+   "brier": 0.06494750406351264,
+   "brier_skill_vs_base_rate": 0.37869575658104304,
+   "log_loss": 0.221838945224864,
+   "calibration_intercept": -0.1032731388230927,
+   "calibration_slope": 1.118492615326858,
+   "ece": 0.025426895657809465
+  }
+ },
+ "station_aware_cv_auc": {
+  "lr": 0.8760468811053842,
+  "rf": 0.8694610728244492
+ },
+ "random_cv_auc": {
+  "lr": 0.8945294620563139,
+  "rf": 0.8899944901963004
+ }
+}

@@ -1,0 +1,471 @@
+{
+ "generated_by": "scripts/prepare_data.py",
+ "data_status": "ALL VALUES ARE SIMULATED (synthetic data generator, not real measurements)",
+ "rows_raw": 6324,
+ "rows_clean": 6324,
+ "rows_removed": 0,
+ "stations_monitored": 31,
+ "stations_unmonitored": 12,
+ "date_range": [
+  "2018-01-02",
+  "2025-12-23"
+ ],
+ "planned_samples": 6479,
+ "sampling_interval_days": 14,
+ "checks": [
+  {
+   "check": "Required columns present",
+   "found": 0,
+   "severity": "pass",
+   "detail": "all 16 required columns found"
+  },
+  {
+   "check": "Dates parse as ISO dates",
+   "found": 0,
+   "severity": "pass",
+   "detail": "all dates parsed"
+  },
+  {
+   "check": "Duplicate Observation_ID",
+   "found": 0,
+   "severity": "pass",
+   "detail": "rows sharing an Observation_ID"
+  },
+  {
+   "check": "Duplicate station-date records",
+   "found": 0,
+   "severity": "pass",
+   "detail": "second and later records for the same station and date (dropped)"
+  },
+  {
+   "check": "Coordinates numeric and in range",
+   "found": 0,
+   "severity": "pass",
+   "detail": "rows with invalid latitude/longitude (dropped)"
+  },
+  {
+   "check": "One coordinate pair per station",
+   "found": 0,
+   "severity": "pass",
+   "detail": "stations whose coordinates change between rows"
+  },
+  {
+   "check": "Stations lie inside their lake outline",
+   "found": 0,
+   "severity": "pass",
+   "detail": "stations outside the (schematic) lake polygon"
+  },
+  {
+   "check": "Lake name matches station register",
+   "found": 0,
+   "severity": "pass",
+   "detail": "rows whose lake differs from the station register"
+  },
+  {
+   "check": "Season consistent with date",
+   "found": 0,
+   "severity": "pass",
+   "detail": "rows where Season does not match the month"
+  },
+  {
+   "check": "Bloom_Observed is binary",
+   "found": 0,
+   "severity": "pass",
+   "detail": "values other than 0 or 1"
+  },
+  {
+   "check": "Monitoring_Status values",
+   "found": 0,
+   "severity": "pass",
+   "detail": "monitored-station file should contain only 'Monitored'"
+  },
+  {
+   "check": "Values inside physical plausibility range",
+   "found": 0,
+   "severity": "pass",
+   "detail": "per-indicator counts: {'Total_Phosphorus': 0, 'Chlorophyll_a': 0, 'Dissolved_Oxygen': 0, 'Turbidity': 0, 'Nitrate': 0, 'Water_Temperature': 0, 'Rainfall': 0} (blanked)"
+  },
+  {
+   "check": "Missing indicator values in delivered rows",
+   "found": 0,
+   "severity": "pass",
+   "detail": "per-indicator counts: {'Total_Phosphorus': 0, 'Chlorophyll_a': 0, 'Dissolved_Oxygen': 0, 'Turbidity': 0, 'Nitrate': 0, 'Water_Temperature': 0, 'Rainfall': 0}"
+  },
+  {
+   "check": "Unit consistency (station medians within 30x of overall median)",
+   "found": 0,
+   "severity": "pass",
+   "detail": "no station is off by an order of magnitude or more"
+  },
+  {
+   "check": "Planned station-date samples present",
+   "found": 155,
+   "severity": "info",
+   "detail": "155 of 6479 planned samples absent (2.4%); 30 in outages (3+ consecutive), 125 isolated"
+  }
+ ],
+ "station_summary": [
+  {
+   "station": "SUP-01",
+   "lake": "Superior",
+   "n_obs": 205,
+   "n_missing": 4,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.1
+  },
+  {
+   "station": "SUP-02",
+   "lake": "Superior",
+   "n_obs": 203,
+   "n_missing": 6,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 97.1
+  },
+  {
+   "station": "SUP-03",
+   "lake": "Superior",
+   "n_obs": 200,
+   "n_missing": 9,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 95.7
+  },
+  {
+   "station": "SUP-04",
+   "lake": "Superior",
+   "n_obs": 205,
+   "n_missing": 4,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.1
+  },
+  {
+   "station": "SUP-05",
+   "lake": "Superior",
+   "n_obs": 204,
+   "n_missing": 5,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 97.6
+  },
+  {
+   "station": "SUP-06",
+   "lake": "Superior",
+   "n_obs": 204,
+   "n_missing": 5,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 97.6
+  },
+  {
+   "station": "MIC-01",
+   "lake": "Michigan",
+   "n_obs": 206,
+   "n_missing": 3,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.6
+  },
+  {
+   "station": "MIC-02",
+   "lake": "Michigan",
+   "n_obs": 206,
+   "n_missing": 3,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.6
+  },
+  {
+   "station": "MIC-03",
+   "lake": "Michigan",
+   "n_obs": 205,
+   "n_missing": 4,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.1
+  },
+  {
+   "station": "MIC-04",
+   "lake": "Michigan",
+   "n_obs": 207,
+   "n_missing": 2,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 99.0
+  },
+  {
+   "station": "MIC-05",
+   "lake": "Michigan",
+   "n_obs": 193,
+   "n_missing": 16,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 92.3
+  },
+  {
+   "station": "MIC-06",
+   "lake": "Michigan",
+   "n_obs": 208,
+   "n_missing": 1,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 99.5
+  },
+  {
+   "station": "HUR-01",
+   "lake": "Huron",
+   "n_obs": 203,
+   "n_missing": 6,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 97.1
+  },
+  {
+   "station": "HUR-02",
+   "lake": "Huron",
+   "n_obs": 205,
+   "n_missing": 4,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.1
+  },
+  {
+   "station": "HUR-03",
+   "lake": "Huron",
+   "n_obs": 206,
+   "n_missing": 3,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.6
+  },
+  {
+   "station": "HUR-04",
+   "lake": "Huron",
+   "n_obs": 202,
+   "n_missing": 7,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 96.7
+  },
+  {
+   "station": "HUR-05",
+   "lake": "Huron",
+   "n_obs": 198,
+   "n_missing": 11,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 94.7
+  },
+  {
+   "station": "HUR-06",
+   "lake": "Huron",
+   "n_obs": 205,
+   "n_missing": 4,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.1
+  },
+  {
+   "station": "ERI-01",
+   "lake": "Erie",
+   "n_obs": 205,
+   "n_missing": 4,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.1
+  },
+  {
+   "station": "ERI-02",
+   "lake": "Erie",
+   "n_obs": 206,
+   "n_missing": 3,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.6
+  },
+  {
+   "station": "ERI-03",
+   "lake": "Erie",
+   "n_obs": 203,
+   "n_missing": 6,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 97.1
+  },
+  {
+   "station": "ERI-04",
+   "lake": "Erie",
+   "n_obs": 206,
+   "n_missing": 3,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.6
+  },
+  {
+   "station": "ERI-05",
+   "lake": "Erie",
+   "n_obs": 204,
+   "n_missing": 5,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 97.6
+  },
+  {
+   "station": "ERI-06",
+   "lake": "Erie",
+   "n_obs": 199,
+   "n_missing": 10,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 95.2
+  },
+  {
+   "station": "ERI-07",
+   "lake": "Erie",
+   "n_obs": 205,
+   "n_missing": 4,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.1
+  },
+  {
+   "station": "ONT-01",
+   "lake": "Ontario",
+   "n_obs": 206,
+   "n_missing": 3,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.6
+  },
+  {
+   "station": "ONT-02",
+   "lake": "Ontario",
+   "n_obs": 206,
+   "n_missing": 3,
+   "first": "2018-01-16",
+   "last": "2025-12-23",
+   "completeness_pct": 98.6
+  },
+  {
+   "station": "ONT-03",
+   "lake": "Ontario",
+   "n_obs": 206,
+   "n_missing": 3,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.6
+  },
+  {
+   "station": "ONT-04",
+   "lake": "Ontario",
+   "n_obs": 201,
+   "n_missing": 8,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 96.2
+  },
+  {
+   "station": "ONT-05",
+   "lake": "Ontario",
+   "n_obs": 207,
+   "n_missing": 2,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 99.0
+  },
+  {
+   "station": "ONT-06",
+   "lake": "Ontario",
+   "n_obs": 205,
+   "n_missing": 4,
+   "first": "2018-01-02",
+   "last": "2025-12-23",
+   "completeness_pct": 98.1
+  }
+ ],
+ "missing_by_type": {
+  "isolated": 125,
+  "outage": 30
+ },
+ "indicator_summary": {
+  "Total_Phosphorus": {
+   "unit": "ug/L",
+   "n": 6324,
+   "min": 1.48,
+   "median": 8.23,
+   "max": 101.9,
+   "valid_range": [
+    0.0,
+    500.0
+   ]
+  },
+  "Chlorophyll_a": {
+   "unit": "ug/L",
+   "n": 6324,
+   "min": 0.23,
+   "median": 2.48,
+   "max": 182.07,
+   "valid_range": [
+    0.0,
+    500.0
+   ]
+  },
+  "Dissolved_Oxygen": {
+   "unit": "mg/L",
+   "n": 6324,
+   "min": 6.95,
+   "median": 11.63,
+   "max": 15.46,
+   "valid_range": [
+    0.0,
+    20.0
+   ]
+  },
+  "Turbidity": {
+   "unit": "NTU",
+   "n": 6324,
+   "min": 0.52,
+   "median": 3.28,
+   "max": 41.35,
+   "valid_range": [
+    0.0,
+    1000.0
+   ]
+  },
+  "Nitrate": {
+   "unit": "mg/L as N",
+   "n": 6324,
+   "min": 0.127,
+   "median": 0.346,
+   "max": 1.893,
+   "valid_range": [
+    0.0,
+    20.0
+   ]
+  },
+  "Water_Temperature": {
+   "unit": "degC",
+   "n": 6324,
+   "min": 0.3,
+   "median": 8.9,
+   "max": 29.9,
+   "valid_range": [
+    -1.0,
+    35.0
+   ]
+  },
+  "Rainfall": {
+   "unit": "mm",
+   "n": 6324,
+   "min": 0.0,
+   "median": 11.4,
+   "max": 325.6,
+   "valid_range": [
+    0.0,
+    500.0
+   ]
+  }
+ }
+}
